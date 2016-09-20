@@ -1,0 +1,49 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: $snow;
+}
+
+
+$side-list: "top", "right", "bottom", "left";
+$xxs: 6px;
+$xs: 12px;
+$sm: 16px;
+$md: 24px;
+$lg: 32px;
+$xl: 40px;
+$xxl: 54px;
+
+.margin--xxs { margin: $xxs; }
+.margin--xs { margin: $xs; }
+.margin--sm { margin: $sm; }
+.margin--md { margin: $md; }
+.margin--lg { margin: $lg; }
+.margin--xl { margin: $xl; }
+.margin--xxl { margin: $xxl; }
+
+@each $side in $side-list {
+  .margin-#{$side}--xxs {
+    margin-#{$side}: $xxs;
+  }
+  .margin-#{$side}--xs {
+    margin-#{$side}: $xs;
+  }
+  .margin-#{$side}--sm {
+    margin-#{$side}: $sm;
+  }
+  .margin-#{$side}--md {
+    margin-#{$side}: $md;
+  }
+  .margin-#{$side}--lg {
+    margin-#{$side}: $lg;
+  }
+  .margin-#{$side}--xl {
+    margin-#{$side}: $xl;
+  }
+  .margin-#{$side}--xxl {
+    margin-#{$side}: $xxl;
+  }
+}
