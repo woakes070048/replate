@@ -32,3 +32,4 @@ class HomePage extends React.Component {
 }
 
 HomePage.propTypes = { view: React.PropTypes.number.isRequired };
+HomePage.propTypes = { text: React.PropTypes.string.isRequired };
