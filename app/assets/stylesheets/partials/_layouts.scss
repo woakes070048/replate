@@ -6,6 +6,10 @@ body {
   background-color: $snow;
 }
 
+.content-container {
+  padding-left: $nav-left-width + 30px;
+}
+
 
 $side-list: "top", "right", "bottom", "left";
 $xxs: 6px;

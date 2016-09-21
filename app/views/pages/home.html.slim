@@ -1,6 +1,40 @@
-h1 Welcome to the Homepage!
+= render 'partials/nav_left'
 
-= react_component "HomePage", { \
-    view: 0,                    \
-    text: "Hello there!"        \
-}
+.content-container
+  h1 Welcome to the Homepage!
+
+  = react_component "HomePage", { \
+      view: 0,                    \
+      text: "Hello there!"        \
+  }
+
+  p
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit tenetur delectus voluptatem nostrum rerum incidunt, eos eaque nesciunt, id impedit facilis, quia molestias blanditiis eum veritatis, in minus assumenda numquam?
+    a href="http://facebook.com" Facebook
+    | Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, asperiores at ex dolorum a repellendus animi ducimus eligendi odit deserunt, voluptatem, non laborum aut ad aperiam reprehenderit mollitia molestias quod.
+
+
+
+  button.button Button
+  button.button.button--lg Large
+  button.button.button--sm Small
+
+  button.button.button--white White Button
+  button.button.button--black Black Button
+  button.button.button--outline Outlined Button
+
+  a.link href="http://facebook.com" Link w/ underline
+  a.link.link--no-underline href="http://facebook.com" Link w/o underline
+
+
+  form.input-container
+    input.input placeholder="Email" type="email"
+    input.button type="submit"
+
+  form.input-container
+    input.input.input--lg placeholder="Email" type="email"
+    input.button.button--lg type="submit"
+
+  form.input-container
+    input.input.input--sm placeholder="Email" type="email"
+    input.button.button--sm type="submit"

@@ -6,3 +6,19 @@ body {
   font-size: 16px;
   line-height: 1.5;
 }
+
+a,
+.link {
+  color: $green;
+  font-size: inherit;
+  font-weight: 500;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.link--no-underline:hover {
+  text-decoration: none;
+}
