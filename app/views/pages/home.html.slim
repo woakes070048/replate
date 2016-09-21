@@ -1,4 +1,5 @@
 = render 'partials/nav_left'
+
 .content-container
   h1 Welcome to the Homepage!
 
@@ -26,6 +27,14 @@
   a.link.link--no-underline href="http://facebook.com" Link w/o underline
 
 
-  .input-container
-    input.input
+  form.input-container
+    input.input placeholder="Email" type="email"
     input.button type="submit"
+
+  form.input-container
+    input.input.input--lg placeholder="Email" type="email"
+    input.button.button--lg type="submit"
+
+  form.input-container
+    input.input.input--sm placeholder="Email" type="email"
+    input.button.button--sm type="submit"
